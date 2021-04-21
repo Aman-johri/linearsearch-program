@@ -1,0 +1,21 @@
+class Linearsearch {
+    public static void main(String[] args){
+        //taking element directly in arr
+        int[] arr = {1,2,3,4,5,6};
+        //taking any element which is search by us and store in one variable
+        int ele = 3;
+        //taking variable temp and initialise it 0
+        int temp = 0;
+        //for accessing all the elements we have to use for loop
+        for (int i = 0; i < arr.length; i++) {
+            //now checking the condition for searching
+            if (arr[i] == ele) {
+                System.out.println("Element found at" + i + "position");
+                temp = temp + 1;
+            }
+        }
+            if (temp == 0){
+                System.out.println("element not found");
+        }
+    }
+}
