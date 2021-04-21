@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Linearsearch {
+    public static void main(String[] args){
+        // making object of the class by using Scanner
+        Scanner sc = new Scanner(System.in);
+        //inputing the size of array by user
+        System.out.println("Enter the size of array");
+        int n = sc.nextInt();
+        //taking element in arr from user
+        System.out.println("Input the elements of array");
+        int[] arr = new int[n];
+        //taking arr input
+        for (int i = 0; i <n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        //printing array elements
+        System.out.println("These are the array elements");
+        for (int i = 0; i < n; i++) {
+            System.out.println(+arr[i]);
+        }
+        //inputing what element to be searched by the user
+        System.out.println("Input which element is to be searched");
+        int ele = sc.nextInt();
+        //take temparary variable and initialise 0 to it
+        int temp = 0;
+        //searching the element by using forloop
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == ele){
+                System.out.println("Element found at" +i+ "position");
+                temp = temp + 1;
+            }
+        }
+        if (temp == 0){
+            System.out.println("Element not found");
+        }
+
+    }
+
+}
